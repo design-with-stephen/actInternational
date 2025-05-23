@@ -1,0 +1,145 @@
+.navbar{
+    background: var(--color4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 8rem;
+}
+
+.logo-Wrap img{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: var(--color1);
+    transition: 0.6s ease all;
+
+    &:hover{
+        color:var(--colorHover)
+    }
+    
+}
+
+.hamburger{
+  display: none;
+}
+.hamburger i {
+  font-size: 2rem;
+  color: var(--color1);
+  cursor: pointer;
+}
+.mob-navbar{
+  top: 0;
+  position: absolute;
+  left: -100%;
+  width: 90%;
+  height: 100vh;
+  background: var(--color3);
+  transition: 0.6s ease all;
+  z-index: 33;
+  color: var(--color4);
+  padding: 2rem;
+}
+.mob-navbar .logo-Wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mob-navbar ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+.mob-link a{
+  text-decoration: none;
+  color: var(--color1);
+}
+.mob-navbar.mobNavActive {
+  left: 0;
+}
+.closeBtn{
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid grey;
+  padding: 0.2rem;
+  border-radius: 4px;
+  color: var(--color1);
+}
+.seperator{
+  margin-top: 10px;
+}
+@media screen and (max-width: 480px){
+  .hamburger{
+  display: flex;
+}
+  
+}
+@media screen and (max-width: 768px){
+  .hamburger{
+  display: flex;
+}
+  
+}
+
+
+
+
+
+/* Media Queries */
+
+/* max-width: 1200px */
+@media (max-width: 1200px) {
+  /* Reserved for future adjustments */
+}
+
+/* max-width: 992px */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 1.2rem 2rem;
+  }
+}
+
+/* max-width: 768px */
+@media (max-width: 768px) {
+  .link {
+    display: none;
+  }
+
+  .navbar {
+    padding: 1.2rem 2rem;
+  }
+}
+
+/* max-width: 600px */
+@media (max-width: 600px) {
+  .link {
+    display: none;
+  }
+
+  .navbar {
+    padding: 1.2rem 2rem;
+  }
+
+}
+
+/* max-width: 400px */
+@media (max-width: 400px) {
+  .link {
+    display: none;
+  }
+
+  .navbar {
+    padding: 1.2rem 2rem;
+  }
+}

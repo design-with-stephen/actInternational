@@ -1,0 +1,41 @@
+.hiddenToRight{
+    opacity: 0;
+    transform: translateX(50px);
+    filter: blur(5px);
+    transition: all 0.5s ease;
+  }
+.hiddenToLeft{
+    opacity: 0;
+    transform: translateX(-50px);
+    filter: blur(5px);
+    transition: all 0.5s ease;
+  }
+.showFromLeft{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+
+.showFromRight{
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  .hiddenToBottom{
+    opacity: 0;
+    transform: translateY(-20px);
+    filter: blur(5px);
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }
+.showFromBottom{
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+
+@media (prefers-reduced-motion: reduce) {
+  .showFromBottom,.showFromLeft,.showFromRight, .hiddenToRight,.hiddenToLeft, .HiddenToBottom{
+      animation: none; 
+  }
+}

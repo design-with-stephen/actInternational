@@ -1,38 +1,3 @@
-.navbar{
-    background: var(--color4);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 8rem;
-}
-
-.logo-Wrap img{
-    width: 50px;
-    height: 50px;
-}
-
-.navbar ul{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    list-style: none;
-}
-.navbar ul a{
-    text-decoration: none;
-    color: var(--color1);
-    transition: 0.6s ease all;
-
-    &:hover{
-        color:var(--colorHover)
-    }
-    
-}
-
-.mob-navbar{
-    width: 300px;
-    height: 100vh;
-    display: none;
-}
 .hero{
     width: 100%;
     height: calc(100vh - 6rem);
@@ -51,21 +16,23 @@
     height: 100%;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 .hero-content {
     position: absolute;
     top: 40%;
     transform: translateY(-40%);
-    padding: 0rem 0rem 0rem 8rem;
+    padding: 0rem 8rem;
+    z-index: 3;
 }
-.hero h1, .hero p ,.hero h2{
+.hero-content h1, .hero-content p ,.hero-content h2{
     color: var(--color1);
 }
 .hero-content h1{
     font-size: 3rem;
     
 }
-.hero .heroTagline{
+.hero-content .heroTagline{
     width: 54%;
 }
 .hero-contentBottom{
@@ -74,6 +41,119 @@
     right: 0;
     bottom: 10%;
 }
+
+
+/* image slider */
+
+.slider{
+    position: relative;
+    max-width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+.slides{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width:100%;
+    height: 100%;
+    position: relative;
+}
+.slide{
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.slide-description {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    padding: 0rem 0rem 0rem 8rem;
+    z-index: 6;
+    width: 45%;
+}
+.slide-description h1, .slide-description p ,.slide-description h2{
+    color: var(--color1);
+}
+.slide-description h1{
+    font-size: 3rem;
+    
+}
+.slide-description .slideTagline{
+    width:100%;
+}
+
+.controllers{
+    position: absolute;
+    right: 4rem;
+    bottom: 10%;
+    transform:translateY(-10%);
+    display: flex;
+    gap: 2rem;
+    z-index: 4;
+}
+.arrow{
+    font-size: 1.2rem;
+    color: #fff;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.arrow:focus{
+    background: #020;
+    outline: 2px solid #fff;
+}
+.arrow.left{
+    background: rgb(1, 116, 45);
+}
+.arrow.right{
+    background: rgb(1, 116, 45);
+}
+
+.indicators{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 4;
+}
+
+
+.dot{
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    background: var(--controllers-color);
+}
+
+.dot.active{
+    background: var(--activeDot);
+}
+
+
+@media(max-width:768px){
+   .arrow{
+     font-size: 1.5rem;
+   }
+   .slider{
+    height: 80vh;
+   }
+}
+
+@media(max-width:480px){
+   .slider{
+    height: 80vh;
+   }
+}
+
 
 /* about us styles */
 .about-content{
@@ -151,6 +231,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    z-index: 3;
 }
 .banner p{
     color: var(--color1);
@@ -181,7 +262,6 @@
     object-fit: cover;
 }
 .specializationWrap div{
-    background: green;
     height: 240px;
     display: flex;
     justify-content: center;
@@ -202,8 +282,6 @@
 .specializationWrap div:nth-child(1){
     transform: rotate(-6deg);
 }
-
-
 
 /* impact section */
 .impact>h2{
@@ -251,42 +329,4 @@
 .contact button{
     margin:0 auto;
     margin-top: 1.2rem;
-}
-
-
-
-
-/* footer style */
-.footer-container{
-    width: 100%;
-    height: fit-content;
-    padding: 2rem 8rem;
-    background: var(--color4);
-    
-}
-.top-footer{
-    display: flex;
-    gap: 4rem;
-}
-.footer-logo-Wrap img{
-    width: 100px;
-    height: 100px;
-}
-.footer-links{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
-.footer-links ul li{
-    list-style: none;
-}
-.footer-links ul li a{
-    color: var(--color1);
-    text-decoration: none;
-}
-.bottomFooter{
-    padding-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

@@ -8,11 +8,14 @@
     --color1:#D4F1F4;
     --black:#202020;
     --color2: #0097A7;
-    --color3: #005F6A;
+    --color3: #004952;
     --color4: #003D40;
     --ctnColor:rgb(226, 174, 3);
     --colorHover:#ffcc26;
     --borderColor:#e6e6e6;
+
+    --controllers-color:#003D40;
+    --activeDot:#ffcc26;
 }
 body{
     border-color: var(--color1);
@@ -20,6 +23,42 @@ body{
 .container{
     padding: 4rem 8rem;
 }
+
+
+.delay1{
+    transition-delay: 0.1s;
+}
+.delay2{
+    transition-delay: 0.2s;
+}
+.delay3{
+    transition-delay: 0.3s;
+}
+.delay4{
+    transition-delay: 0.4s;
+}
+.delay5{
+    transition-delay: 0.5s;
+}
+.delay6{
+    transition-delay: 0.6s;
+}
+.delay7{
+    transition-delay: 0.7s;
+}
+.delay8{
+    transition-delay: 0.8s;
+}
+.delay9{
+    transition-delay: 0.9s;
+}
+.delay10{
+    transition-delay: 1s;
+}
+.overflowHidden{
+    overflow: hidden;
+  }
+
 button{
     cursor: pointer;
 }
@@ -66,7 +105,30 @@ h3{
     margin-top: 12rem;
 }
 
-@media screen and (max-width: 480px) {
+
+
+/* Then go down */
+@media (max-width: 1200px) { 
+    .container{
+        padding: 4rem 3rem;
+    }
+ }
+@media (max-width: 992px) { 
+    .container{
+        padding: 2rem;
+    }
+ }
+@media (max-width: 768px) { 
+    .container{
+        padding: 4rem 2rem;
+    }
+}
+@media (max-width: 600px) {
+    .container{
+        padding: 4rem 1.4rem;
+    }
+ }
+@media (max-width: 400px) { 
     .container{
         padding: 4rem 1.2rem;
     }
