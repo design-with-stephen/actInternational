@@ -1,0 +1,92 @@
+.common-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.common-hero h1 {
+    position: absolute;
+
+}
+
+.main {
+    display: flex;
+    padding: 8rem;
+    gap: 2rem;
+}
+.contact-info{
+    width: 90%;
+}
+.contact-info p {
+    width: 100%;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.6rem;
+}
+
+.field-group input {
+    height: 40px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px;
+    padding: 0.2rem 0.8rem;
+}
+
+textarea {
+    height: 180px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 4px;
+    resize: none;
+    padding: 0.2rem 0.8rem;
+}
+
+.submitBtn {
+    width: 100%;
+    height: 40px;
+    background-color: var(--color4);
+    color: var(--color1);
+    border: none;
+    transition: 0.5s ease all;
+
+    &:hover {
+        background-color: var(--color2);
+    }
+}
+
+.map iframe{
+    width: 100%;
+    height: 60vh;
+    border: none;
+}
+/* media query */
+@media (max-width: 1200px) {}
+
+@media (max-width: 992px) {
+    .main {
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding: 1.2rem;
+    }
+
+    .contact-form form {
+        padding: 0rem;
+    }
+}
+
+@media (max-width: 600px) {
+    
+}
+
+@media (max-width: 400px) {}

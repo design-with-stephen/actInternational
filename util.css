@@ -1,79 +1,130 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
-    padding:0;
+    padding: 0;
     font-family: "poppins";
 }
-:root{
-    --color1:#D4F1F4;
-    --black:#202020;
+
+:root {
+    --color1: #D4F1F4;
+    --black: #202020;
     --color2: #0097A7;
     --color3: #004952;
     --color4: #003D40;
-    --ctnColor:rgb(226, 174, 3);
-    --colorHover:#ffcc26;
-    --borderColor:#e6e6e6;
+    --ctnColor: rgb(226, 174, 3);
+    --colorHover: #ffcc26;
+    --borderColor: #e6e6e6;
 
-    --controllers-color:#003D40;
-    --activeDot:#ffcc26;
+    --controllers-color: #003D40;
+    --activeDot: #ffcc26;
 }
-body{
+
+body {
     border-color: var(--color1);
 }
-.container{
-    padding: 4rem 8rem;
+
+.container {
+    padding: 8rem;
+}
+
+.common-hero {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    top: 0;
+}
+
+.common-heroContent {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color1);
+    z-index: 55;
+}
+
+.common-heroContent p {
+    width: 80%;
+    text-align: center;
 }
 
 
-.delay1{
+.filter {
+    position: absolute;
+    background: linear-gradient(45deg, rgba(1, 139, 116, 0.507), rgba(0, 31, 21, 0.555));
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.delay1 {
     transition-delay: 0.1s;
 }
-.delay2{
+
+.delay2 {
     transition-delay: 0.2s;
 }
-.delay3{
+
+.delay3 {
     transition-delay: 0.3s;
 }
-.delay4{
+
+.delay4 {
     transition-delay: 0.4s;
 }
-.delay5{
+
+.delay5 {
     transition-delay: 0.5s;
 }
-.delay6{
+
+.delay6 {
     transition-delay: 0.6s;
 }
-.delay7{
+
+.delay7 {
     transition-delay: 0.7s;
 }
-.delay8{
+
+.delay8 {
     transition-delay: 0.8s;
 }
-.delay9{
+
+.delay9 {
     transition-delay: 0.9s;
 }
-.delay10{
+
+.delay10 {
     transition-delay: 1s;
 }
-.overflowHidden{
-    overflow: hidden;
-  }
 
-button{
+.overflowHidden {
+    overflow: hidden;
+}
+
+button {
     cursor: pointer;
 }
-h3{
+
+h3 {
     color: var(--color4);
     font-weight: 500;
 }
-.ctn{
+
+.ctn {
     padding: 1rem 2rem;
     background-color: var(--ctnColor);
     color: var(--black);
     border: none;
     margin-top: 1.2rem;
 }
-.btn{
+
+.btn {
     padding: 1rem 2rem;
     background-color: var(--color4);
     color: var(--color1);
@@ -81,7 +132,8 @@ h3{
     margin-top: 0.6rem;
     border-radius: 5px;
 }
-.moreBtn{
+
+.moreBtn {
     padding: 1rem 2rem;
     border-radius: 5px;
     background-color: transparent;
@@ -89,47 +141,66 @@ h3{
     border: none;
     border: 1px solid var(--color4);
 }
-.sectionTitle{
+
+.sectionTitle {
     font-size: 1.4rem;
     color: var(--black);
     font-weight: 600;
 }
-.sectionParagraph{
+
+.sectionParagraph {
     color: #363636;
-    padding-bottom:0.8rem;
+    padding-bottom: 0.8rem;
     font-size: 0.95rem;
     line-height: 28px;
 }
 
-.marginTop{
+.marginTop {
     margin-top: 12rem;
 }
 
 
 
-/* Then go down */
-@media (max-width: 1200px) { 
-    .container{
+/* media query */
+@media (max-width: 1200px) {
+    .container {
         padding: 4rem 3rem;
     }
- }
-@media (max-width: 992px) { 
-    .container{
+}
+
+@media (max-width: 992px) {
+    .container {
         padding: 2rem;
     }
- }
-@media (max-width: 768px) { 
-    .container{
+}
+
+@media (max-width: 768px) {
+    .common-hero {
+        height: 40vh;
+    }
+
+    .common-heroContent {
+        padding: 1.2rem;
+    }
+
+    .common-heroContent p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
         padding: 4rem 2rem;
     }
 }
+
 @media (max-width: 600px) {
-    .container{
+    .container {
         padding: 4rem 1.4rem;
     }
- }
-@media (max-width: 400px) { 
-    .container{
+}
+
+@media (max-width: 400px) {
+    .container {
         padding: 4rem 1.2rem;
     }
 }
