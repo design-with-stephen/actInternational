@@ -1,5 +1,4 @@
 .tabs{
-    margin-top: 8rem;
     border-bottom: 1px solid #f0f0f0;
     display: flex;
     flex-wrap: wrap;
@@ -13,10 +12,17 @@
     text-align: left;
     border: 1px solid #f0f0f0;
     border-radius: 4px;
+    /* transition: 0.5s ease-in; */
+
+    &:hover{
+        border: 1px solid var(--color3);
+        color: var(--color3);
+    }
 }
 .listWrap{
     padding-left: 2rem;
 }
+
 .listWrap li{
     color:#363636;
 }
@@ -37,15 +43,32 @@
     gap: 0.9rem;
     /* background-color: red; */
 }
+#goals{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
 
+.goal{
+     border: 1px solid #f0f0f0;
+    padding: 2rem;
+}
+.goal:nth-of-type(odd){
+    background-color: var(--color4);
+    color: var(--color1);
+    border-radius: 5px;
+}
 
 .subtitle{
     color: var(--color4);
     font-weight: 400;
 }
 
-.subtitle:nth-of-type(even){
-     color:var(--color1);
+.evenSubtitle{
+     color:var(--colorYellow);
 }
 
 .coreValue:nth-of-type(even){
@@ -57,6 +80,7 @@
 }
 .tabContent{
     display: none;
+    transition: 0.5s ease-in;
 }
 .tabContent.active{
     display: block;
@@ -65,4 +89,65 @@
 .tab.active{
     background-color: var(--color4);
     color:aliceblue;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.question{
+    border: 1px solid #f0f0f0;
+    padding: 1.2rem 2rem;
+    cursor: pointer;
+
+    &:hover{
+        border: 1px solid var(--colorYellow);
+    }
+}
+.question.active{
+    background-color: var(--color4);
+    color: var(--color1);
+}
+.answer{
+    display: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: bisque;
+
+}
+.answer.active{
+    display: block;
+}
+
+.headingWrap{
+    margin-top: 4rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+/* media query */
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    #coreValues{
+    grid-template-columns: repeat(1,1fr);
+}
+#goals{
+    grid-template-columns: repeat(1,1fr);
+}
+}
+
+@media (max-width: 600px) {
+    
+}
+
+@media (max-width: 400px) {
+    
 }

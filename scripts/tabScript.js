@@ -20,3 +20,23 @@ tabs.forEach((tab, index) => {
         tabContents[index].classList.add("active");
     });
 });
+
+
+// faqs code
+
+const questions = document.querySelectorAll(".question");
+const answers = document.querySelectorAll(".answer");
+
+questions.forEach((question, index) => {
+    question.addEventListener("click", () => {
+        questions.forEach((faq) => {
+            faq.classList.remove("active");
+        })
+        answers.forEach((ans) => {
+            ans.classList.remove("active");
+        })
+
+        question.classList.add("active");
+        answers[index].classList.add("active");
+    })
+})
