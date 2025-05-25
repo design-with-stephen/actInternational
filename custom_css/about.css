@@ -124,7 +124,15 @@
     padding: 2rem 0;
     text-align: center;
 }
-
+.askQuestion{
+    margin-top: 4rem;
+    padding: 0 8rem 8rem 8rem;
+}
+.centeredElements{
+    /* text-align: center; */
+    /* width: 60%;
+    margin: 0 auto; */
+}
 
 /* media query */
 @media (max-width: 1200px) {
