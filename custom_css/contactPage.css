@@ -1,8 +1,3 @@
-.common-hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .common-hero h1 {
     position: absolute;
@@ -59,11 +54,7 @@ textarea {
     }
 }
 
-.map iframe{
-    width: 100%;
-    height: 60vh;
-    border: none;
-}
+
 /* media query */
 @media (max-width: 1200px) {}
 

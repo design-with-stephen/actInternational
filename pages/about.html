@@ -11,7 +11,8 @@
 
   <!-- start of custom css styles -->
   <link rel="stylesheet" href="./../navbar.css" />
-  <link rel="stylesheet" href="./../footer.css"/>
+  <link rel="stylesheet" href="/custom_css/about.css">
+  <link rel="stylesheet" href="./../footer.css" />
   <link rel="stylesheet" href="./../animation.css">
   <link rel="stylesheet" href="./../util.css" />
   <!-- end of custom css styles -->
@@ -29,35 +30,26 @@
         <li class="link" aria-label="click to go to the home page"><a href="../index.html">Home</a></li>
         <li class="link" aria-label="click to go to the About us page"><a href="/pages/about.html">About</a></li>
         <li class="link" aria-label="click to go to the Programs page"><a href="/pages/programs.html">Programs</a></li>
-        <li class="link" aria-label="click to go to the Contact us page"><a href="/pages/contact.html">Contact Us</a></li>
+        <li class="link" aria-label="click to go to the Contact us page"><a href="/pages/contact.html">Contact Us</a>
+        </li>
         <li class="hamburger" aria-label="click to open the sidebar menu"><i class="fa-solid fa-bars bars"></i></li>
       </ul>
     </nav>
     <!--end of navigation bar -->
 
     <!-- hero section start here -->
-    <section class="hero">
-      <img src="images/000015.jpg" alt="" />
+    <section class="common-hero">
+      <img src="/images/000015.jpg" alt="" />
       <div class="filter"></div>
-      <div class="hero-content">
+      <div class="common-heroContent">
         <h1 class="hiddenToLeft">
-          Empowering Communities
-        </h1>
-        <h1 class="hiddenToLeft">
-          Transforming Lives
+          About Us
         </h1>
         <p class="heroTagline hiddenToLeft">
           Together, We build a brighter, self-sustaining future
           by delivering impact where it's needed most
         </p>
-        <button class="ctn">Donate Now</button>
-      </div>
-      <div class="hero-contentBottom">
-        <h2>Voice For the Voiceless</h2>
-        <p>
-          Advocating for Justice,Quality, <br />
-          and Dignity for all
-        </p>
+        <button class="ctn">Explore</button>
       </div>
     </section>
   </header>
@@ -76,9 +68,100 @@
       </ul>
     </div>
   </aside>
-  
+
+  <main>
+    <section class="about-us container">
+      <div class="right">
+        <h2>About Us</h2>
+        <div>
+          <p class="sectionParagraph hiddenToLeft">
+            Action International is a non-governmental organization committed
+            to transforming the lives of vulnerable communities, especially
+            refugees, displaced individuals, and marginalized populations.
+            Founded on the principles of compassion, dignity, and empowerment,
+            we work tirelessly to restore hope where it's needed most. At
+            Action International, we believe that everyone deserves access to
+            basic human rights—shelter, education, healthcare, clean water,
+            and opportunities for self-reliance.
+          </p>
+        </div>
+        <div class="tabs">
+          <button class="tab" aria-label="mission tab">Our Mission</button>
+          <button class="tab" aria-label="vision tab">Our Vision</button>
+          <button class="tab" aria-label="goals tab">Our Goals</button>
+          <button class="tab" aria-label="coreValues tab">Core Values</button>
+        </div>
+        <div class="tabsContent">
+          <div class="tabContent">
+            <h3>Our Mission</h3>
+            <p class="sectionParagraph">
+              To restore dignity and transform lives by providing humanitarian aid,
+              education, health services, and livelihood support to refugees and
+              vulnerable
+              communities—empowering them to thrive with hope and resilience.
+            </p>
+          </div>
+          <div class="tabContent">
+            <h1>Our Vision</h1>
+            <p class="sectionParagraph">
+              A world where every displaced and vulnerable person has the
+              opportunity to live with dignity,
+              access essential services, and contribute meaningfully to society.
+            </p>
+          </div>
+          <div class="tabContent">
+            <h3>Our main Goals</h3>
+            <ul class="listWrap">
+              <li>Support long-term recovery through education, health care, and skills development.</li>
+              <li>Provide immediate relief in times of crisis through food, shelter, and basic needs.</li>
+              <li>Empower individuals with livelihood opportunities and entrepreneurship training.</li>
+              <li>Promote inclusion and protection of refugees and marginalized populations.</li>
+              <li>Advocate for sustainable policies that safeguard the rights and well-being of vulnerable communities.
+              </li>
+            </ul>
+          </div>
+          <div class="tabContent">
+            <h3>Our Core Values</h3>
+            <ul class="listWrap" id="coreValues">
+              <li class="coreValue">
+                <span class="subtitle">Compassion</span>
+                <p>We serve with empathy, love, and a genuine desire to uplift others.</p>
+                </li>
+              <li class="coreValue">
+                <span class="subtitle">Integrity</span> 
+                <p>We are transparent, honest, and accountable in all we do.</p>
+                </li>
+              <li class="coreValue">
+                <span class="subtitle">Empowerment</span>
+                <p>We build skills, confidence, and independence in every individual we support.</p>
+                </li>
+              <li class="coreValue">
+                <span class="subtitle">Respect</span>
+                <p>We honor the dignity and diversity of all people.</p>
+              </li>
+              <li class="coreValue">
+                <span class="subtitle">Collaboration</span>
+                <p>We partner with communities, governments, and organizations for greater impact.</p>
+              </li>
+              <li class="coreValue">
+                <span class="subtitle">Excellence</span> 
+                <p>We are committed to quality, innovation, and continuous improvement in our programs.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="left"></div>
+    </section>
+    <section class="map container">
+      <h2>Our Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63748.43295918304!2d30.869270815211!3d3.0200603849658387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x176e6265a178c769%3A0xaa1e18867d91929c!2sArua!5e0!3m2!1sen!2sug!4v1748118853842!5m2!1sen!2sug"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
   <!-- footer -->
-   <footer class="footer-container">
+  <footer class="footer-container">
     <div class="top-footer">
       <div>
         <div class="footer-logo-Wrap">
@@ -131,6 +214,7 @@
   </footer>
   <script src="./../main.js"></script>
   <script src="./../reveal.js"></script>
+  <script src="/scripts/tabScript.js"></script>
 </body>
 
 </html>
