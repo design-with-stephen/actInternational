@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donate Now</title>
+
+  <!-- font awesome icons link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <!-- start of custom css styles -->
+  <link rel="stylesheet" href="./../footer.css" />
+  <link rel="stylesheet" href="./../navbar.css" />
+  <link rel="stylesheet" href="/custom_css/donation.css">
+  <link rel="stylesheet" href="./../animation.css">
+  <link rel="stylesheet" href="/util.css">
+</head>
+
+<body>
+  <header>
+    <!--start of navigation bar -->
+    <nav class="navbar">
+      <div class="logo-Wrap">
+        <img src="/images/act-white-logo.png" alt="" />
+      </div>
+      <ul class="links">
+        <li class="link" aria-label="click to go to the home page"><a href="../index.html">Home</a></li>
+        <li class="link" aria-label="click to go to the About us page"><a href="/pages/about.html">About</a></li>
+        <li class="link" aria-label="click to go to the Programs page"><a href="/pages/programs.html">Programs</a></li>
+        <li class="link" aria-label="click to go to the Contact us page"><a href="/pages/contact.html">Contact Us</a>
+        </li>
+        <li class="hamburger" aria-label="click to open the sidebar menu"><i class="fa-solid fa-bars bars"></i></li>
+      </ul>
+    </nav>
+    <!--end of navigation bar -->
+
+    <!-- hero section start here -->
+    <section class="common-hero">
+      <img src="../images/000015.jpg" alt="">
+      <div class="filter"></div>
+      <div class="common-heroContent">
+        <h2>Donations</h2>
+        <p>Your contribution can make a meaningful difference.
+          Help us empower communities and support those in need.
+          Every donation, big or small, brings us closer to a better future.
+        </p>
+      </div>
+
+    </section>
+  </header>
+  <aside>
+    <div class="mob-navbar">
+      <div class="logo-Wrap">
+        <img src="/images/act-white-logo.png" alt="" />
+        <button class="closeBtn" aria-label="click to close the side menu"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <hr class="seperator">
+      <ul>
+        <li class="mob-link" aria-label="go to home"><a href="../index.html">Home</a></li>
+        <li class="mob-link" aria-label="go to about us page"><a href="/pages/about.html">About</a></li>
+        <li class="mob-link" aria-label="go to programs page"><a href="/pages/programs.html">Programs</a></li>
+        <li class="mob-link" aria-label="go to contact us page"><a href="/pages/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <div class="donation-container">
+      <h1>Make a Donation</h1>
+      <p>Your generous gift supports our programs and transforms lives.</p>
+
+      <form id="donationForm" novalidate>
+        <div class="input-group">
+          <div>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+        </div>
+        <label>Donation Amount</label>
+        <div class="amount-options">
+          <button type="button" data-amount="10">$10</button>
+          <button type="button" data-amount="25">$25</button>
+          <button type="button" data-amount="50">$50</button>
+          <button type="button" data-amount="100">$100</button>
+        </div>
+
+        <div class="custom-amount">
+          <label for="customAmount">Or enter a custom amount</label>
+          <input type="number" id="customAmount" name="customAmount" min="1" placeholder="e.g., 75" />
+        </div>
+
+        <div class="frequency-toggle">
+          <label><input type="radio" name="frequency" value="one-time" checked /> One-Time</label>
+          <label><input type="radio" name="frequency" value="monthly" /> Monthly</label>
+        </div>
+
+        <div class="payment-method">
+          <div class="payment">
+            <label> MTN Mobile Money</label>
+            <input type="radio" name="paymentMethod" value="mtn" checked />
+          </div>
+          <div class="payment">
+            <label> Airtel Money</label>
+            <input type="radio" name="paymentMethod" value="airtel" />
+          </div>
+          <div class="payment">
+            <label> PayPal</label>
+            <input type="radio" name="paymentMethod" value="paypal" />
+          </div>
+        </div>
+
+        <div class="mobile-number" id="mobileNumberField">
+          <label for="mobileNumber">Mobile Number</label>
+          <input type="text" id="mobileNumber" name="mobileNumber" placeholder="+2567XXXXXXXX" />
+        </div>
+
+        <div class="error-message" id="errorMessage"></div>
+        <button type="submit" class="donate-btn">Donate Now</button>
+      </form>
+    </div>
+
+  </main>
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <h2>Confirm Your Donation</h2>
+      <p id="modalMessage"></p>
+      <button id="confirmBtn">Confirm</button>
+      <button id="cancelBtn" class="cancel-btn">Cancel</button>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <!-- footer -->
+  <footer class="footer-container">
+    <div class="top-footer">
+      <div>
+        <div class="footer-logo-Wrap">
+          <img src="/images/act-white-logo.png" alt="" />
+        </div>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <h4>Quick Links</h4>
+          <li class="footer-link"><a href="#">Home</a></li>
+          <li class="footer-link"><a href="#">About</a></li>
+          <li class="footer-link"><a href="#">Programs</a></li>
+          <li class="footer-link"><a href="#">Services</a></li>
+          <li class="footer-link"><a href="#">Contact Us</a></li>
+        </ul>
+
+        <ul>
+          <h4>Our Programs</h4>
+          <li class="footer-link"><a href="#">Refugee Support</a></li>
+          <li class="footer-link"><a href="#">Skills Training</a></li>
+          <li class="footer-link"><a href="#">Youth Empowerment</a></li>
+          <li class="footer-link"><a href="#">Emergency Relief</a></li>
+          <li class="footer-link"><a href="#">Health & Wellness</a></li>
+        </ul>
+
+        <ul>
+          <h4>Get Involved</h4>
+          <li class="footer-link"><a href="#">Donate</a></li>
+          <li class="footer-link"><a href="#">Volunteer</a></li>
+          <li class="footer-link"><a href="#">Partner With Us</a></li>
+          <li class="footer-link"><a href="#">Events</a></li>
+        </ul>
+
+        <ul>
+          <h4>Contact</h4>
+          <li class="footer-link">Email: info@actioninternational.org</li>
+          <li class="footer-link">Phone: +256 700 123 456</li>
+          <li class="footer-link">Location: Kampala, Uganda</li>
+          <li class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottomFooter">
+      <p>&copy; 2025 Action International. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="./../main.js"></script>
+  <script src="./../reveal.js"></script>
+  <script src="/scripts/donationsPage.js"></script>
+</body>
+
+</html>

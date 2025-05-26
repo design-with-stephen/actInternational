@@ -12,6 +12,14 @@
 .contact-info{
     width: 90%;
 }
+.social-icons{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.social-icons a {
+    color: var(--color4);
+}
 .contact-info p {
     width: 100%;
 }

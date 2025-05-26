@@ -11,9 +11,11 @@
 
   <!-- start of custom css styles -->
   <link rel="stylesheet" href="./../navbar.css" />
-  <link rel="stylesheet" href="./../footer.css"/>
+  <link rel="stylesheet" href="./../footer.css" />
   <link rel="stylesheet" href="./../animation.css">
   <link rel="stylesheet" href="./../util.css" />
+
+  <link rel="stylesheet" href="/custom_css/programsPage.css">
   <!-- end of custom css styles -->
 
 </head>
@@ -29,38 +31,30 @@
         <li class="link" aria-label="click to go to the home page"><a href="../index.html">Home</a></li>
         <li class="link" aria-label="click to go to the About us page"><a href="/pages/about.html">About</a></li>
         <li class="link" aria-label="click to go to the Programs page"><a href="/pages/programs.html">Programs</a></li>
-        <li class="link" aria-label="click to go to the Contact us page"><a href="/pages/contact.html">Contact Us</a></li>
+        <li class="link" aria-label="click to go to the Contact us page"><a href="/pages/contact.html">Contact Us</a>
+        </li>
         <li class="hamburger" aria-label="click to open the sidebar menu"><i class="fa-solid fa-bars bars"></i></li>
       </ul>
     </nav>
     <!--end of navigation bar -->
 
     <!-- hero section start here -->
-    <section class="hero">
-      <img src="images/000015.jpg" alt="" />
+    <section class="common-hero">
+      <img src="/images/000015.jpg" alt="" />
       <div class="filter"></div>
-      <div class="hero-content">
+      <div class="common-heroContent">
         <h1 class="hiddenToLeft">
-          Empowering Communities
-        </h1>
-        <h1 class="hiddenToLeft">
-          Transforming Lives
+          Explore our activities
         </h1>
         <p class="heroTagline hiddenToLeft">
           Together, We build a brighter, self-sustaining future
           by delivering impact where it's needed most
         </p>
-        <button class="ctn">Donate Now</button>
-      </div>
-      <div class="hero-contentBottom">
-        <h2>Voice For the Voiceless</h2>
-        <p>
-          Advocating for Justice,Quality, <br />
-          and Dignity for all
-        </p>
+        <button class="ctn"><a href="">Get Started</a></button>
       </div>
     </section>
   </header>
+
   <aside>
     <div class="mob-navbar">
       <div class="logo-Wrap">
@@ -76,8 +70,229 @@
       </ul>
     </div>
   </aside>
-  
+  <main>
+    <section class="latestUpdates container">
+      <h2 class="sectionTitle hiddenToLeft">Latest Publications</h2>
+      <div class="cards">
+        <!-- Community Awareness Card 1 -->
+        <div class="card hiddenToLeft delay3">
+          <div class="card-img">
+            <img src="/images/000010.jpg" alt="Health Awareness Campaign" />
+          </div>
+          <div class="card-body">
+            <h3>Health Awareness Campaign Report</h3>
+            <p class="sectionParagraph">
+              This report covers our outreach on hygiene, nutrition, and disease prevention, empowering refugees to take
+              charge of their health.
+            </p>
+            <button class="ReadMoreBtn">Read More</button>
+          </div>
+        </div>
 
+        <!-- Community Awareness Card 2 -->
+        <div class="card hiddenToLeft delay2">
+          <div class="card-img">
+            <img src="/images/000014.jpg" alt="Community Dialogue Series" />
+          </div>
+          <div class="card-body">
+            <h3>Community Dialogue Series</h3>
+            <p class="sectionParagraph">
+              Explore highlights from our monthly forums that foster peaceful coexistence, gender equity, and conflict
+              resolution across diverse communities.
+            </p>
+            <button class="ReadMoreBtn">Read More</button>
+          </div>
+        </div>
+
+        <!-- Community Awareness Card 3 -->
+        <div class="card hiddenToLeft delay1">
+          <div class="card-img">
+            <img src="/images/002.jpg" alt="GBV Awareness" />
+          </div>
+          <div class="card-body">
+            <h3>Gender-Based Violence Awareness Report</h3>
+            <p class="sectionParagraph">
+              Learn how awareness sessions and survivor support groups are transforming attitudes and reducing GBV
+              incidents in refugee settlements.
+            </p>
+            <button class="ReadMoreBtn">Read More</button>
+          </div>
+        </div>
+
+        <!-- Education Card 1 -->
+        <div class="card hiddenToLeft delay3">
+          <div class="card-img">
+            <img src="/images/000013.jpg" alt="Primary Education" />
+          </div>
+          <div class="card-body">
+            <h3>Primary Education Progress Update</h3>
+            <p class="sectionParagraph">
+              A summary of enrollment growth, classroom improvements, and teacher training in our supported primary
+              schools throughout 2024.
+            </p>
+            <button class="ReadMoreBtn">Read More</button>
+          </div>
+        </div>
+
+        <!-- Education Card 2 -->
+        <div class="card hiddenToLeft delay2">
+          <div class="card-img">
+            <img src="/images/0000031.jpg" alt="Digital Learning" />
+          </div>
+          <div class="card-body">
+            <h3>Digital Learning for Refugee Youth</h3>
+            <p class="sectionParagraph">
+              Discover how our e-learning pilot is helping displaced students access curriculum content, even in remote
+              areas with limited resources.
+            </p>
+            <button class="ReadMoreBtn">Read More</button>
+          </div>
+        </div>
+
+        <!-- Education Card 3 -->
+        <div class="card hiddenToLeft delay1">
+          <div class="card-img">
+            <img src="/images/000016.jpg" alt="Teacher Development" />
+          </div>
+          <div class="card-body">
+            <h3>Teacher Development Highlights</h3>
+            <p class="sectionParagraph">
+              This publication shares stories from our teacher mentorship program, spotlighting professional growth and
+              student success.
+            </p>
+            <button class="ReadMoreBtn">Read More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="moreBtnWrap">
+        <button class="moreBtn">Explore More</button>
+      </div>
+    </section>
+
+    <section class="banner">
+      <img src="/images/002.jpg" alt="" />
+      <div class="filter"></div>
+      <div class="bannerContent">
+        <h3 class="hiddenToLeft">Join Hand in , Making Smiles</h3>
+        <p class="hiddenToLeft">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          officiis aperiam laudantium corrupti iste
+        </p>
+        <button class="ctn">Donate Now</button>
+      </div>
+    </section>
+    <section class="Upcoming container">
+      <h2 class="sectionTitle hiddenToLeft">Upcoming Activities</h2>
+      <div class="cards">
+        <div class="card hiddenToLeft delay3">
+          <div class="card-img">
+            <img src="/images/0005.jpg" alt="Community Health Outreach" />
+          </div>
+          <div class="card-body">
+            <h3>Backyard Farming for Families</h3>
+            <p class="sectionParagraph">
+              A hands-on training session for households on how to grow vegetables in small spaces, enhancing food
+              security and nutrition among vulnerable communities.
+            </p>
+            <button class="ReadMoreBtn">Read More</button>
+          </div>
+
+        </div>
+
+        <div class="card hiddenToLeft delay2">
+          <div class="card-img">
+            <img src="/images/000014.jpg" alt="Tech for Youth Bootcamp" />
+          </div>
+          <div class="card-body">
+            <h3>EmpowerHer Wellness Day</h3>
+            <p class="sectionParagraph">
+              A special event for single mothers focused on mental health, self-care, and support circles to promote
+              healing and resilience.
+            </p>
+            <button class="ReadMoreBtn">Read More</button>
+          </div>
+
+        </div>
+
+        <div class="card hiddenToLeft delay1">
+          <div class="card-img">
+            <img src="/images/0006.jpg" alt="Women's Empowerment Forum" />
+          </div>
+          <div class="card-body">
+            <h3>Green Future Tree Planting</h3>
+            <p class="sectionParagraph">
+              Support environmental recovery with our tree planting initiative aimed at restoring ecosystems around
+              refugee camps.
+            </p>
+            <button class="ReadMoreBtn">Read More</button>
+          </div>
+        </div>
+
+        <div class="card hiddenToLeft delay3">
+          <div class="card-img">
+            <img src="/images/00009.jpg" alt="Green Future Tree Planting" />
+          </div>
+          <div class="card-body">
+            <h3>Literacy Boost Workshop</h3>
+            <p class="sectionParagraph">
+              A community-based program aimed at improving reading and writing skills among primary school learners
+              through interactive storytelling and phonics games.
+            </p>
+            <button class="ReadMoreBtn">Read More</button>
+          </div>
+
+        </div>
+
+        <div class="card hiddenToLeft delay2">
+          <div class="card-img">
+            <img src="/images/00022.jpg" alt="Sports for Peace Tournament" />
+          </div>
+          <div class="card-body">
+            <h3>Tech for Youth Bootcamp</h3>
+            <p class="sectionParagraph">
+              A one-week training introducing young refugees to coding, digital skills, and online opportunities for
+              growth and income.
+            </p>
+            <button class="ReadMoreBtn">Read More</button>
+          </div>
+        </div>
+
+        <div class="card hiddenToLeft delay1">
+          <div class="card-img">
+            <img src="/images/000013.jpg" alt="Back-to-School Supplies Drive" />
+          </div>
+          <div class="card-body">
+            <h3>Back-to-School Supplies Drive</h3>
+            <p class="sectionParagraph">
+              Help us prepare hundreds of refugee children for the new school term with backpacks, books, and essential
+              school materials.
+            </p>
+            <button class="ReadMoreBtn">Read More</button>
+          </div>
+        </div>
+      </div>
+      <div class="moreBtnWrap">
+        <button class="moreBtn">Explore More</button>
+      </div>
+    </section>
+
+    <section class="container subscriptionSection">
+      <div class="sectionHeader">
+        <h2 class="sectionTitle">Stay Updated</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente fugiat
+          assumenda cumque maxime error nesciunt similique omnis autem velit tenetur praesentium dolorum
+        </p>
+      </div>
+      <div class="subscription">
+        <form action="">
+          <caption>Subscribe to Our Weekly Letter</caption>
+          <input type="text" placeholder="enter your email">
+          <button>subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
   <!-- footer -->
   <footer class="footer-container">
     <div class="top-footer">
@@ -132,6 +347,7 @@
   </footer>
   <script src="./../main.js"></script>
   <script src="./../reveal.js"></script>
+  <script src="../scripts/programsPage.js"></script>
 </body>
 
 </html>

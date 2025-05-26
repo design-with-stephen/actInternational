@@ -1,0 +1,58 @@
+
+.latestUpdates .card , .Upcoming .card{
+  display: none;
+}
+
+.latestUpdates .card.visible , .Upcoming .card.visible{
+    display: block;
+}
+
+.subscriptionSection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.subscription{
+    position: relative;
+}
+.subscription form{
+    width: 100%;
+    position: absolute;
+    bottom:0;
+}
+.subscription form input{
+    width: 70%;
+    padding: 0.8rem 2rem;
+}
+.subscription form button{
+    width: 28%;
+    padding: 0.8rem 2rem;
+    background-color: var(--color4);
+    border: none;
+    color: var(--color1);
+}
+
+/* media query */
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    .subscriptionSection{
+    grid-template-columns: repeat(1,1fr);
+    gap: 6rem;
+}
+}
+
+
+@media (max-width: 600px) {
+    
+}
+
+@media (max-width: 400px) {
+    
+}

@@ -128,11 +128,6 @@
     margin-top: 4rem;
     padding: 0 8rem 8rem 8rem;
 }
-.centeredElements{
-    /* text-align: center; */
-    /* width: 60%;
-    margin: 0 auto; */
-}
 
 /* media query */
 @media (max-width: 1200px) {
@@ -149,6 +144,10 @@
 }
 #goals{
     grid-template-columns: repeat(1,1fr);
+}
+.askQuestion{
+    margin-top: 4rem;
+    padding: 0 1.2rem 1.2rem 1.2rem;
 }
 }
 

@@ -4,115 +4,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact page</title>
+  <title>Contact Page</title>
 
-  <!-- font awesome icons link -->
+  <!-- Font Awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-  <!-- start of custom css styles -->
+  <!-- Custom CSS Styles -->
   <link rel="stylesheet" href="./../navbar.css" />
-  <link rel="stylesheet" href="./../footer.css"/>
+  <link rel="stylesheet" href="./../footer.css" />
   <link rel="stylesheet" href="./../animation.css">
   <link rel="stylesheet" href="./../custom_css/contactPage.css">
   <link rel="stylesheet" href="./../util.css" />
-  <!-- end of custom css styles -->
-
 </head>
 
 <body>
   <header>
-    <!--start of navigation bar -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
       <div class="logo-Wrap">
-        <img src="/images/act-white-logo.png" alt="" />
+        <img src="/images/act-white-logo.png" alt="Organization Logo" />
       </div>
       <ul class="links">
-        <li class="link" aria-label="click to go to the home page"><a href="../index.html">Home</a></li>
-        <li class="link" aria-label="click to go to the About us page"><a href="/pages/about.html">About</a></li>
-        <li class="link" aria-label="click to go to the Programs page"><a href="/pages/programs.html">Programs</a></li>
-        <li class="link" aria-label="click to go to the Contact us page"><a href="/pages/contact.html">Contact Us</a></li>
-        <li class="hamburger" aria-label="click to open the sidebar menu"><i class="fa-solid fa-bars bars"></i></li>
+        <li class="link"><a href="../index.html">Home</a></li>
+        <li class="link"><a href="/pages/about.html">About</a></li>
+        <li class="link"><a href="/pages/programs.html">Programs</a></li>
+        <li class="link"><a href="/pages/contact.html">Contact Us</a></li>
+        <li class="hamburger"><i class="fa-solid fa-bars bars"></i></li>
       </ul>
     </nav>
-    <!--end of navigation bar -->
 
-    <!-- hero section start here -->
+    <!-- Hero Section -->
     <section class="common-hero">
-      <img src="../images/000015.jpg" alt="">
+      <img src="../images/000015.jpg" alt="Hero Image">
       <div class="filter"></div>
       <div class="common-heroContent">
-        <h2>contact us</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-          Illum ullam architecto soluta, et quidem suscipit officiis
-           laborum repudiandae ex esse temporibus! Dignissimos, 
-          nihil vitae. Saepe odio nisi optio asperiores labore.
+        <h2>Contact Us</h2>
+        <p>We’re here to connect, collaborate, and support.
+          Reach out with your questions, feedback, or partnership inquiries.
+          Let’s build a brighter future together through communication and action.
         </p>
       </div>
     </section>
   </header>
+
+  <!-- Mobile Navigation -->
   <aside>
     <div class="mob-navbar">
       <div class="logo-Wrap">
-        <img src="/images/act-white-logo.png" alt="" />
-        <button class="closeBtn" aria-label="click to close the side menu"><i class="fa-solid fa-xmark"></i></button>
+        <img src="/images/act-white-logo.png" alt="Logo" />
+        <button class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
       </div>
       <hr class="seperator">
       <ul>
-        <li class="mob-link" aria-label="go to home"><a href="../index.html">Home</a></li>
-        <li class="mob-link" aria-label="go to about us page"><a href="/pages/about.html">About</a></li>
-        <li class="mob-link" aria-label="go to programs page"><a href="/pages/programs.html">Programs</a></li>
-        <li class="mob-link" aria-label="go to contact us page"><a href="/pages/contact.html">Contact Us</a></li>
+        <li class="mob-link"><a href="../index.html">Home</a></li>
+        <li class="mob-link"><a href="/pages/about.html">About</a></li>
+        <li class="mob-link"><a href="/pages/programs.html">Programs</a></li>
+        <li class="mob-link"><a href="/pages/contact.html">Contact Us</a></li>
       </ul>
     </div>
   </aside>
-  
-  <!-- main section -->
-   <main class="main">
+
+  <!-- Main Content -->
+  <main class="main">
     <section class="contact-info">
-      <h2 class="title">
-        Reach Out to Us
-      </h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, 
-        minima officia odit, quam sit fuga facilis accusantium aperiam 
-        porro nam voluptatem ipsum omnis amet, 
-        modi assumenda ea quas perferendis animi?</p>
+      <h2 class="title">Reach Out to Us</h2>
+      <p>
+        If you have any inquiries, suggestions, or would like to support our work,
+        feel free to get in touch. Whether you're interested in donating, volunteering,
+        or just want to learn more, we're always happy to hear from you.
+        Use the form below or visit us at our offices.
+      </p>
+      <p>Call us at:
+        <a href="tel:+256700123456" aria-label="Call phone number">
+          +256 700 123 456
+        </a>
+      </p>
+      <p>Email us at:
+        <a href="mailto:support@actioninternational.org">support@actioninternational.org</a>
+      </p>
+
+      <div class="social-icons">
+        <a href="#" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
     </section>
+
+
+    <!-- Contact Form -->
     <section class="contact-form">
       <form action="">
-        <caption></caption>
         <div class="field-group">
-          <label for="">Full Name</label>
-          <input type="text" name="name" placeholder="please Enter your full name">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Please enter your full name" required>
         </div>
         <div class="field-group">
-          <label for="">Phone</label>
-          <input type="tel" name="phone" placeholder="please Enter your phone number">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Please enter your phone number" required>
         </div>
         <div class="field-group">
-          <label for="">Email</label>
-          <input type="email" name="email" placeholder="please Enter your email">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Please enter your email" required>
         </div>
         <div class="field-group">
-          <label for="">Message</label>
-          <textarea name="message" id="meassage" placeholder="Type your Message Here">
-
-          </textarea>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
         </div>
-        <button class="submitBtn" >send message</button>
+        <button class="submitBtn" type="submit">Send Message</button>
       </form>
     </section>
-   </main>
-   <section class="map container">
+  </main>
+
+  <!-- Map Section -->
+  <section class="map container">
     <h2>Visit Our Offices</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63748.43295918304!2d30.869270815211!3d3.0200603849658387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x176e6265a178c769%3A0xaa1e18867d91929c!2sArua!5e0!3m2!1sen!2sug!4v1748118853842!5m2!1sen!2sug" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   </section>
-  <!-- footer -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63748.43295918304!2d30.869270815211!3d3.0200603849658387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x176e6265a178c769%3A0xaa1e18867d91929c!2sArua!5e0!3m2!1sen!2sug!4v1748118853842!5m2!1sen!2sug"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer-container">
     <div class="top-footer">
-      <div>
-        <div class="footer-logo-Wrap">
-          <img src="/images/act-white-logo.png" alt="" />
-        </div>
+      <div class="footer-logo-Wrap">
+        <img src="/images/act-white-logo.png" alt="Footer Logo" />
       </div>
       <div class="footer-links">
         <ul>
@@ -123,7 +148,6 @@
           <li class="footer-link"><a href="#">Services</a></li>
           <li class="footer-link"><a href="#">Contact Us</a></li>
         </ul>
-
         <ul>
           <h4>Our Programs</h4>
           <li class="footer-link"><a href="#">Refugee Support</a></li>
@@ -132,7 +156,6 @@
           <li class="footer-link"><a href="#">Emergency Relief</a></li>
           <li class="footer-link"><a href="#">Health & Wellness</a></li>
         </ul>
-
         <ul>
           <h4>Get Involved</h4>
           <li class="footer-link"><a href="#">Donate</a></li>
@@ -140,7 +163,6 @@
           <li class="footer-link"><a href="#">Partner With Us</a></li>
           <li class="footer-link"><a href="#">Events</a></li>
         </ul>
-
         <ul>
           <h4>Contact</h4>
           <li class="footer-link">Email: info@actioninternational.org</li>
@@ -158,6 +180,8 @@
       <p>&copy; 2025 Action International. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Scripts -->
   <script src="./../main.js"></script>
   <script src="./../reveal.js"></script>
 </body>
